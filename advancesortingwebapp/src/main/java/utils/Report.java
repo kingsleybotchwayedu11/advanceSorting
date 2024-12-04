@@ -1,13 +1,21 @@
 package utils;
 
 import java.util.HashMap;
+import java.util.List;;
 
 public class Report {
 
     private String message;
-    private String id;
-    public HashMap<String, HashMap<String, String>> links = new HashMap<> ();
+    private List<Integer> data;
+    private HashMap<String, HashMap<String, String>> links = new HashMap<> ();
     
+    public void setData(List<Integer> data) {
+        this.data = data;
+    }
+
+    public List<Integer> getData() {
+        return data;
+    }
     public void setMessage(String message) {
         this.message = message;
     }
@@ -32,11 +40,5 @@ public class Report {
         links.put(name, link);
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getId() {
-        return id;
-    }
+    
 }
