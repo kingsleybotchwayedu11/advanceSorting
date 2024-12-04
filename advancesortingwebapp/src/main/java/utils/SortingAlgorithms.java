@@ -271,7 +271,7 @@ public class SortingAlgorithms {
     public static Function<List<Integer>, List<Integer>> GetFunciton(String name) {
        if(name.equals("mergesort"))
             return SortingAlgorithms::mergeSort;
-        else if(name.equals("heapSort"))
+        else if(name.equals("heapsort"))
             return SortingAlgorithms::heapSort;
         else  if(name.equals("quicksort"))
             return SortingAlgorithms::quickSort;
